@@ -1,0 +1,23 @@
+.App{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista{
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) ;
+}
+
+.cerrar{
+  background-color: red;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+.principal{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: overline;
+}
