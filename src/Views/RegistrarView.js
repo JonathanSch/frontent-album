@@ -44,11 +44,11 @@ const RegistrarView = () => {
         <div style={{marginLeft:10}}>
             <button className='sendRegistrar' onClick={()=>{
                 history.push('/login')
-            }}>If you already have an account, log in here</button>
-            <h1>Regístrate</h1>
-            <input type='text' placeholder="Usuario" onChange={handleUsuario}/>
+            }}>If you already have an account log in here</button>
+            <h1>Register</h1>
+            <input type='text' placeholder="User" onChange={handleUsuario}/>
             <br />
-            <input type='password' placeholder="Contraseña" onChange={handlePassword}/>
+            <input type='password' placeholder="Password" onChange={handlePassword}/>
             <img src={Siman} className="Siman" alt="Siman HH"/>
             <p>We recommend that the password has more than 13 characters.</p>
             <button onClick={()=>{

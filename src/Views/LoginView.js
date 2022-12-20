@@ -42,11 +42,11 @@ const LoginView = () => {
         <div style={{marginLeft:10}}>
             <button className='sendRegistrar' onClick={()=>{
                 history.push('/register')
-            }}>If you don't have an account, register here</button>
+            }}>If you don't have an account register here</button>
             <h1>Login</h1>
-            <input type='text' placeholder="Usuario" onChange={handleUsuario}/>
+            <input type='text' placeholder="User" onChange={handleUsuario}/>
             <br />
-            <input type='password' placeholder="Contraseña" onChange={handlePassword}/>
+            <input type='password' placeholder="Password" onChange={handlePassword}/>
             <img src={Siman} className="Siman" alt="Siman HH"/>
             <br />
             <button onClick={()=>{
