@@ -42,8 +42,8 @@ function CartaView() {
         localStorage.removeItem('token');
         localStorage.removeItem('usuario');
         history.push('/login')
-      }}>Cerrar sesión</button>
-      <h1 className="principal">Elige quien dijo el dato curioso para ganar la estampa del madrij</h1>
+      }}>Log Out</button>
+      <h1 className="principal">Choose who said the fun fact to win the sticker of the group leader.</h1>
       <div className="lista">
         {renderCartas}
       </div>

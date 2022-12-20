@@ -32,7 +32,7 @@ const RegistrarView = () => {
                     if(res.data.token){
                         localStorage.setItem('token',res.data.token);
                         localStorage.setItem('usuario',usuario);
-                        history.push('/tuscartas')
+                        history.push('/yourcards')
                     }
                 }).catch(err=>console.log(err))
             }
@@ -44,16 +44,16 @@ const RegistrarView = () => {
         <div style={{marginLeft:10}}>
             <button className='sendRegistrar' onClick={()=>{
                 history.push('/login')
-            }}>Si ya tienes una cuenta inicia sesión aquí</button>
+            }}>If you already have an account, log in here</button>
             <h1>Regístrate</h1>
             <input type='text' placeholder="Usuario" onChange={handleUsuario}/>
             <br />
             <input type='password' placeholder="Contraseña" onChange={handlePassword}/>
             <img src={Siman} className="Siman" alt="Siman HH"/>
-            <p>Recomendamos que la contraseña tenga más de 8 caracteres y un caracter especial como #,-,!</p>
+            <p>We recommend that the password has more than 13 characters.</p>
             <button onClick={()=>{
                 registrar();
-                }}>Registrar</button>
+                }}>Register</button>
         </div>
     )
 }

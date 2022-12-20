@@ -25,7 +25,7 @@ const LoginView = () => {
             else if(res.data.token){
                 localStorage.setItem('token',res.data.token);
                 localStorage.setItem('usuario',usuario);
-                history.push('/tuscartas')
+                history.push('/yourcards')
             }
         }).catch(err=>console.log(err));
     }
@@ -41,8 +41,8 @@ const LoginView = () => {
     return (
         <div style={{marginLeft:10}}>
             <button className='sendRegistrar' onClick={()=>{
-                history.push('/registro')
-            }}>Si no tienes una cuenta registrate aquí</button>
+                history.push('/register')
+            }}>If you don't have an account, register here</button>
             <h1>Login</h1>
             <input type='text' placeholder="Usuario" onChange={handleUsuario}/>
             <br />
@@ -51,7 +51,7 @@ const LoginView = () => {
             <br />
             <button onClick={()=>{
                 login()
-                }}>Inicia sesión</button>
+                }}>Login</button>
         </div>
     )
 }

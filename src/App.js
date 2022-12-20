@@ -12,8 +12,8 @@ function App() {
     <Switch>
         <Route exact path="/login" component={LoginView} /> 
         <Redirect exact path='/' to='/login' />
-        <Route exact path="/tuscartas" component={CartaView} />
-        <Route exact path='/registro' component={RegistrarView}/>
+        <Route exact path="/yourcards" component={CartaView} />
+        <Route exact path='/register' component={RegistrarView}/>
         <Route component={NotFound}/>
     </Switch>
   </BrowserRouter>;
